@@ -80,14 +80,7 @@ class TodoListState extends State<TodoList> {
         child: Padding(
           padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
           child: ListTile(
-            leading: Checkbox(
-              value: _checkbox,
-              onChanged: (value) {
-                setState(() {
-                  _checkbox = !_checkbox;
-                });
-              },
-            ),
+            leading: Image(image: AssetImage('assets/check.png')),
             title: Text(todoText,
               style: TextStyle(
                   fontSize: 25
