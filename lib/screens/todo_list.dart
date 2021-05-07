@@ -88,7 +88,10 @@ class TodoListState extends State<TodoList> {
                 });
               },
             ),
-            title: Text(todoText),
+            title: Text(todoText,
+              style: TextStyle(
+                  fontSize: 25
+              ),),
             trailing: IconButton(
               icon: Icon(Icons.remove),
               onPressed: () {
